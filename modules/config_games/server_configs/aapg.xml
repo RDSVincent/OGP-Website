@@ -1,0 +1,28 @@
+<game_config>
+  <game_key>aapg_linux64</game_key>
+  <protocol>lgsl</protocol>
+  <lgsl_query_name>source</lgsl_query_name>
+  <installer>steamcmd</installer>
+  <game_name>Americas Army Proving Grounds</game_name>
+  <server_exec_name>AAPG</server_exec_name>
+  <cli_template>%PORT% %VOIP_PORT% %SAP_PORT% %QUERY_PORT% -log Server.log %SERVER_NAME% -aauregion=2</cli_template>
+  <cli_params>
+    <cli_param id="PORT" cli_string="-port" options="s" />
+    <cli_param id="VOIP_PORT" cli_string="-voipport" options="s" />
+    <cli_param id="SAP_PORT" cli_string="-SAP" options="s" />
+    <cli_param id="QUERY_PORT" cli_string="-SQP" options="s" />
+    <cli_param id="SERVER_NAME" cli_string="-servername" options="s" />
+  </cli_params>
+  <exe_location>Binaries/Linux</exe_location>
+  <max_user_amount>24</max_user_amount>
+  <mods>
+    <mod key="default">
+      <name>none</name>
+      <installer_name>203300</installer_name>
+      <installer_login>anonymous</installer_login>
+    </mod>
+  </mods>
+  <configuration_files>
+    <file description="Server Config">AAGame/Config/PCServerLinux-AAGame.ini</index>
+  </configuration_files>
+</game_config>
